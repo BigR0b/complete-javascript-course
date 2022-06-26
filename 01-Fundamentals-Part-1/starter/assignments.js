@@ -1,10 +1,10 @@
-// Assignment 1
+// Assignment Values and Variables
 const country = "United States";
 const continent = "North America";
 let population = 332818657;
 console.log(`${country}, ${continent}, ${population}`);
 
-// Assignment 2
+// Assignment Data Types
 const isIsland = true;
 let language 
 
@@ -13,20 +13,20 @@ console.log(typeof population);
 console.log(typeof isIsland);
 console.log(typeof language);
 
-// Assignment 3
+// Assignment let, const and var
 language = "english";
 
-// Assignment 4
+// Assignment Basic Operators
 let halfPopulation = population / 2;
 let populationByOne = population + 1;
 
 console.log(halfPopulation, populationByOne);
 
-// Assignment 5
+// Assignment Strings and Template Literals
 const description = `${country} is in ${continent}, and its ${population} people speack ${language}.`;
 console.log(description);
 
-// Assignment 6
+// Assignment Taking Decisions: if / else Statements
 const averagePopulation = 33000000;
 
 if (population > averagePopulation) {
@@ -35,7 +35,7 @@ if (population > averagePopulation) {
     console.log(`${country}'s population is ${averagePopulation - population} below average.`);
 }
 
-// Assignment 7
+// Assignment Type Conversion and Coercion
 '9' - '5';
 '19' - '13' + '17';
 '19' - '13' + 17;

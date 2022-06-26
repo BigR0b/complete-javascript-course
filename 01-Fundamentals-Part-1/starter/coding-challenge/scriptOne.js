@@ -24,8 +24,8 @@ const johnHeightOne = 1.95;
 
 let markHigherBMI = false;
 
-markBMIOne = markMassOne / markHeightOne ** 2;
-johnBMIOne = johnMassOne / johnHeightOne ** 2;
+markBMIOne = Math.round((markMassOne / markHeightOne ** 2) * 10) / 10;
+johnBMIOne = Math.round((johnMassOne / johnHeightOne ** 2) * 10) / 10;
 
 if (markBMIOne > johnBMIOne) {
     markHigherBMIOne = true;
@@ -43,8 +43,8 @@ const johnHeightTwo = 1.76;
 
 let markHigherBMITwo = false;
 
-markBMITwo = markMassTwo / markHeightTwo ** 2;
-johnBMITwo = johnMassTwo / johnHeightTwo ** 2;
+markBMITwo = Math.round((markMassTwo / markHeightTwo ** 2) * 10) / 10;
+johnBMITwo = Math.round((johnMassTwo / johnHeightTwo ** 2) * 10) / 10;
 
 if (markBMITwo > johnBMITwo) {
     markHigherBMITwo = true;
