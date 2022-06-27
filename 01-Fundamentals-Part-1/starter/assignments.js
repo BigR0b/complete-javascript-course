@@ -60,3 +60,31 @@ if (language === 'english' && population < 50000000 && !isIsland) {
 }else{
     console.log('The United States does not meet your criteria :(');
 }
+
+// The switch Statement
+switch (language) {
+    case 'chinese':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break
+    case 'hendi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+        break
+}
+
+// The Conditional (Ternary) Operator
+
+const populationAverageCompare = population > 33000000 ? 'above' : 'below';
+
+console.log(`United States population is ${populationAverageCompare} average`);
