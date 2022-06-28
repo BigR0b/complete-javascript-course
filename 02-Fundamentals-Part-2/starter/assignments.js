@@ -64,3 +64,18 @@ if (populations.length === 4) {
 
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
 console.log(percentages);
+
+// Basic Array Operations (Methods)
+const neighbors = ['Canada', 'Mexico'];
+neighbors.push('Utopia');
+console.log(neighbors);
+
+neighbors.pop()
+console.log(neighbors);
+
+if (!neighbors.includes('Germany')) {
+    console.log('Probably not a central European county');
+} 
+
+neighbors[neighbors.indexOf('Mexico')] = 'Republic of Mexico';
+console.log(neighbors);
