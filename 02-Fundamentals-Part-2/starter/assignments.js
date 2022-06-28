@@ -52,3 +52,15 @@ const descPop2 = describePopulation('Canada', 38000000);
 const descPop3 = describePopulation('Mexico', 128000000);
 
 console.log(descPop1, descPop2, descPop3);
+
+// Introduction to Arrays
+const populations = [330000000, 30000000, 128000000, 1390000000];
+
+if (populations.length === 4) {
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(percentages);
