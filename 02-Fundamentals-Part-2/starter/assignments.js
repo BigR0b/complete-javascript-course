@@ -92,11 +92,15 @@ const myCountry = {
 	language: 'english',
 	population: 330000000,
 	neighbors: [ 'Canada', 'Mexico' ],
-    getDescription: function() {
-        return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbors.length} neighboring countries and a capital called ${this.capital}`
-    }
+
+	//Object Methods
+	getDescription: function() {
+		return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbors
+			.length} neighboring countries and a capital called ${this.capital}`;
+	}
 };
 
+// Dot vs. Bracket Notation
 myCountry.population = myCountry.population + 2000000;
 console.log(myCountry.population);
 
@@ -104,4 +108,33 @@ myCountry['population'] = myCountry['population'] - 2000000;
 console.log(myCountry['population']);
 
 // Object Methods
-console.log(myCountry.getDescription()); 
+console.log(myCountry.getDescription());
+
+// Iteration: The for Loop
+
+for (let votes = 1; votes <= 50; votes++) {
+	console.log(`Vote number ${votes} is currently voting`);
+}
+
+// Looping Arrays, Breaking and Continuing
+let percentages2 = [];
+for (let i = 0; i < percentages.length; i++) {
+	percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
+// Looping Backwards and Loops in Loops
+
+const listOfNeighbors = [ [ 'Canada', 'Mexico' ], [ 'Spain' ], [ 'Norway', 'Sweden', 'Russia' ] ];
+
+for (let i = 0; i < listOfNeighbors.length; i++)
+	for (let y = 0; y < listOfNeighbors[i].length; y++) console.log(`Neighbor: ${listOfNeighbors[i][y]}`);
+
+// The while Loop
+let percentages3 = [];
+let i = 0;
+while (i < percentages.length) {
+	percentages3.push(percentageOfWorld1(populations[i]));
+	i++;
+}
+console.log(percentages3);

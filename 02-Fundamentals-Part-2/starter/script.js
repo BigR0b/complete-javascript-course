@@ -1,16 +1,19 @@
 'use strict';
 
-/* let hasDriversLicense = false;
+/*
+let hasDriversLicense = false;
 const pastTest = true;
 
 if (pastTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log('I can Drive'); */
+if (hasDriversLicense) console.log('I can Drive'); 
+*/
 
 // const interface = 'Audio';
 // const private = 534;
 
 // Intro to arrays
-/*const friend1 = 'Michael';
+/*
+const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
 
@@ -45,13 +48,15 @@ const age3 = calcAge(years[years.length - 1]);
 console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
-console.log(ages);*/
+console.log(ages);
+*/
 
 // Basic Array Operations (Methods)
 const friends = [ 'Michael', 'Steven', 'Peter' ];
 
 //Add elements
-/*const newLength = friends.push('Jay'); //add to end
+/*
+const newLength = friends.push('Jay'); //add to end
 console.log(friends);
 console.log(newLength);
 
@@ -74,7 +79,8 @@ console.log(friends.includes('Bob'));
 
 if (friends.includes('Steven')) {
     console.log('You have a friend called Steven');
-}*/
+}
+*/
 
 // Dot vs. Bracket Notation
 /*
@@ -109,8 +115,11 @@ console.log(jonas);
 // Challenge 
 //"Jonas has 3 friends, and his best friend is call Michael"
 
-console.log(`${jonas['firstName']} has ${jonas['friends'].length} friends, and his best friend is called ${jonas['friends'][0]}`); */
+console.log(`${jonas['firstName']} has ${jonas['friends'].length} friends, and his best friend is called ${jonas['friends'][0]}`); 
+*/
 
+// Object Methods
+/*
 const jonas = {
 	firstName: 'Jonas',
 	lastName: 'Schmedtmann',
@@ -138,3 +147,27 @@ console.log();
 // "Jonas is a 46-year old teacher, and he has a/no driver's license"
 
 console.log(jonas.getSummary());
+*/
+
+// continue and break
+const jonas = [
+	'Jonas',
+	'Schmedtmann',
+	2037-1991,
+	'teacher',
+	[ 'Michael', 'Peter', 'Steven' ],
+	true,
+];
+
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
+    console.log(jonas[i], typeof jonas[i]);
+}
